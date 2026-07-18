@@ -374,6 +374,7 @@
                           "id":  "popescu-georgeta",
                           "nume":  "Popescu Georgeta",
                           "rol":  "Diriginte",
+                          "decedat":  true,
                           "poze":  [
                                        "popescu-georgeta-1.jpg"
                                    ]

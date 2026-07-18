@@ -294,6 +294,17 @@ img { max-width: 100%; display: block; }
   padding: 3px 10px;
 }
 
+.in-memoriam-frame {
+  border: 4px solid #1a1a1a;
+}
+
+.in-memoriam-label {
+  margin: 6px 0 0;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
 /* ---------- Albume foto ---------- */
 
 .albume-grid {

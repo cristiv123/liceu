@@ -30,6 +30,7 @@
 
       const photoWrap = document.createElement("div");
       photoWrap.className = "coleg-photo-wrap";
+      if (persoana.decedat) photoWrap.classList.add("in-memoriam-frame");
       const img = document.createElement("img");
       img.loading = "lazy";
       img.alt = persoana.nume;
@@ -49,6 +50,13 @@
         subtitleEl.className = "coleg-city";
         subtitleEl.textContent = subtitle;
         info.appendChild(subtitleEl);
+      }
+
+      if (persoana.decedat) {
+        const memoriam = document.createElement("p");
+        memoriam.className = "in-memoriam-label";
+        memoriam.textContent = "In memoriam";
+        info.appendChild(memoriam);
       }
 
       if (poze && poze.length > 1) {

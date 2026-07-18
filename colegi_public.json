@@ -42,7 +42,7 @@
     { "id": "totoi-vasile", "nume": "Vasile Totoi (Sile)", "oras": "Sibiu", "poze": ["sile1.JPG", "vlad_sile1.jpg", "sile1.jpg", "sile1.jpg"] }
   ],
   "profesori": [
-    { "id": "popescu-georgeta", "nume": "Popescu Georgeta", "rol": "Diriginte", "poze": ["popescu_georgeta.jpg"] },
+    { "id": "popescu-georgeta", "nume": "Popescu Georgeta", "rol": "Diriginte", "decedat": true, "poze": ["popescu_georgeta.jpg"] },
     { "id": "sangeorzan-stefan", "nume": "Sangeorzan Stefan", "rol": "Profesor", "poze": ["sangeorzan_stefan.jpg"] },
     { "id": "negoias-constantin", "nume": "Negoias Constantin", "rol": "Profesor", "poze": ["negoias_constantin.jpg"] },
     { "id": "matenciuc-mircea", "nume": "Matenciuc Mircea", "rol": "Profesor", "poze": ["matenciuc.jpg"] },
