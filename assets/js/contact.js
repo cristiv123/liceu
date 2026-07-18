@@ -83,20 +83,17 @@
   const footerYear = document.getElementById("footer-year");
   if (footerYear) footerYear.textContent = new Date().getFullYear();
 
-  Promise.all([
-    fetch("colegi_complet_privat.json").then((res) => res.json()),
-    fetch("assets/data/colegi.json").then((res) => res.json()),
-  ])
-    .then(([privat, public_]) => {
-      const colegiPublicById = {};
-      (public_.colegi || []).forEach((c) => {
-        colegiPublicById[c.id] = c;
-      });
-      renderColegi(privat.colegi || [], colegiPublicById);
-      renderExtra(privat.diriginte, privat.contacte_suplimentare);
-    })
-    .catch((err) => {
-      tbody.innerHTML = '<tr><td colspan="6" style="color:#a94f21">Nu am putut încărca datele.</td></tr>';
-      console.error("Eroare la încărcarea datelor de contact:", err);
+  const privat = window.COLEGI_PRIVAT_DATA;
+  const public_ = window.COLEGI_DATA;
+  if (privat && public_) {
+    const colegiPublicById = {};
+    (public_.colegi || []).forEach((c) => {
+      colegiPublicById[c.id] = c;
     });
+    renderColegi(privat.colegi || [], colegiPublicById);
+    renderExtra(privat.diriginte, privat.contacte_suplimentare);
+  } else {
+    tbody.innerHTML = '<tr><td colspan="6" style="color:#a94f21">Nu am putut încărca datele.</td></tr>';
+    console.error("window.COLEGI_PRIVAT_DATA sau window.COLEGI_DATA lipseste - verifica script-urile incluse inaintea contact.js");
+  }
 })();

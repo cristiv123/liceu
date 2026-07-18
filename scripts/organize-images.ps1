@@ -79,7 +79,20 @@ function Process-Persoane($persoane) {
 Process-Persoane $data.colegi
 if ($data.profesori) { Process-Persoane $data.profesori }
 
-$data | ConvertTo-Json -Depth 10 | Set-Content -Path $JsonOut -Encoding UTF8
+$dataJson = $data | ConvertTo-Json -Depth 10
+$dataJson | Set-Content -Path $JsonOut -Encoding UTF8
+
+# Also emit a .js wrapper so pages can load data via <script> instead of fetch()
+# (fetch() of local JSON is blocked by browsers when a page is opened via file://)
+$jsOut = [System.IO.Path]::ChangeExtension($JsonOut, ".js")
+"window.COLEGI_DATA = $dataJson;" | Set-Content -Path $jsOut -Encoding UTF8
+
+$privatJsonIn = "colegi_complet_privat.json"
+if (Test-Path $privatJsonIn) {
+    $privatJson = Get-Content $privatJsonIn -Raw
+    $privatJsOut = Join-Path $jsonOutDir "colegi-privat.js"
+    "window.COLEGI_PRIVAT_DATA = $privatJson;" | Set-Content -Path $privatJsOut -Encoding UTF8
+}
 
 Write-Host "Copied/optimized $copiedCount images to $TargetDir"
 Write-Host "Missing source files ($($missing.Count)):"

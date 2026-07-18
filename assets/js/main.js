@@ -231,16 +231,14 @@
   const footerYear = document.getElementById("footer-year");
   if (footerYear) footerYear.textContent = new Date().getFullYear();
 
-  fetch("assets/data/colegi.json")
-    .then((res) => res.json())
-    .then((data) => {
-      renderPersoane(grid, data.colegi || [], "oras");
-      renderPersoane(profesoriGrid, data.profesori || [], "rol");
-      renderAlbume(data.album_foto || []);
-      renderVideo(data.video || []);
-    })
-    .catch((err) => {
-      grid.innerHTML = '<p style="color:#a94f21">Nu am putut încărca lista colegilor.</p>';
-      console.error("Eroare la încărcarea colegi.json:", err);
-    });
+  const data = window.COLEGI_DATA;
+  if (data) {
+    renderPersoane(grid, data.colegi || [], "oras");
+    renderPersoane(profesoriGrid, data.profesori || [], "rol");
+    renderAlbume(data.album_foto || []);
+    renderVideo(data.video || []);
+  } else {
+    grid.innerHTML = '<p style="color:#a94f21">Nu am putut încărca lista colegilor.</p>';
+    console.error("window.COLEGI_DATA lipseste - verifica ca assets/data/colegi.js e inclus inaintea main.js");
+  }
 })();

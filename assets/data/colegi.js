@@ -1,0 +1,673 @@
+﻿window.COLEGI_DATA = {
+    "clasa":  "Liceul Industrial Nr. 2 Mangalia, Clasa a XII-a A, Promotia 1988",
+    "sursa_foto_baza":  "http://cristiv2.mysite.com/liceu/",
+    "nota":  "Fisier sigur pentru sectiunea publica a site-ului nou. Contine doar nume, oras/tara si referinte foto. Datele complete (telefon, email, adresa, data nasterii) sunt in colegi_complet_privat.json.",
+    "colegi":  [
+                   {
+                       "id":  "albu-marius",
+                       "nume":  "Albu Marius-Dorel",
+                       "oras":  "Constanta",
+                       "poze":  [
+                                    "albu-marius-1.jpg",
+                                    "albu-marius-2.jpg",
+                                    "albu-marius-3.jpg",
+                                    "albu-marius-4.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "badoiu-adriana",
+                       "nume":  "Badoiu Adriana",
+                       "oras":  "Bucuresti",
+                       "poze":  [
+                                    "badoiu-adriana-1.jpg",
+                                    "badoiu-adriana-2.jpg",
+                                    "badoiu-adriana-3.jpg",
+                                    "badoiu-adriana-4.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "bolan-mihaela",
+                       "nume":  "Bolan Mihaela",
+                       "oras":  "Mangalia",
+                       "poze":  [
+                                    "bolan-mihaela-1.jpg",
+                                    "bolan-mihaela-2.jpg",
+                                    "bolan-mihaela-3.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "catai-catalin",
+                       "nume":  "Catai Catalin",
+                       "oras":  "Constanta",
+                       "poze":  [
+                                    "catai-catalin-1.jpg",
+                                    "catai-catalin-2.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "casaru-camelia",
+                       "nume":  "Casaru Camelia-Gabriela",
+                       "oras":  "Mangalia",
+                       "poze":  [
+                                    "casaru-camelia-1.jpg",
+                                    "casaru-camelia-2.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "ciociia-angel",
+                       "nume":  "Ciociia Angel",
+                       "oras":  "Cotu Vaii",
+                       "poze":  [
+                                    "ciociia-angel-1.jpg",
+                                    "ciociia-angel-2.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "carstea-diana",
+                       "nume":  "Carstea Diana",
+                       "oras":  "Germania",
+                       "poze":  [
+                                    "carstea-diana-1.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "carstea-viviana",
+                       "nume":  "Carstea Viviana",
+                       "oras":  "Anglia",
+                       "poze":  [
+                                    "carstea-viviana-1.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "cristea-laurentiu",
+                       "nume":  "Cristea Laurentiu",
+                       "oras":  "Canada",
+                       "poze":  [
+                                    "cristea-laurentiu-1.jpg",
+                                    "cristea-laurentiu-2.jpg",
+                                    "cristea-laurentiu-3.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "duta-lucian",
+                       "nume":  "Duta Lucian-Nicolae",
+                       "oras":  "Bucuresti",
+                       "poze":  [
+                                    "duta-lucian-1.jpg",
+                                    "duta-lucian-2.jpg",
+                                    "duta-lucian-3.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "gargaianu-florentin",
+                       "nume":  "Gargaianu Florentin-Sebastian",
+                       "oras":  "Bucuresti",
+                       "poze":  [
+                                    "gargaianu-florentin-1.jpg",
+                                    "gargaianu-florentin-2.jpg",
+                                    "gargaianu-florentin-3.jpg",
+                                    "gargaianu-florentin-4.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "gica-simona",
+                       "nume":  "Gica Simona-Genovia",
+                       "oras":  "Mangalia",
+                       "poze":  [
+                                    "gica-simona-1.jpg",
+                                    "gica-simona-2.jpg",
+                                    "gica-simona-3.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "ion-cristina",
+                       "nume":  "Ion Cristina-Liliana",
+                       "oras":  "Bucuresti",
+                       "poze":  [
+                                    "ion-cristina-1.jpg",
+                                    "ion-cristina-2.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "jianu-eugen",
+                       "nume":  "Jianu Eugen-Viorel",
+                       "oras":  "Constanta",
+                       "poze":  [
+                                    "jianu-eugen-1.jpg",
+                                    "jianu-eugen-2.jpg",
+                                    "jianu-eugen-3.jpg",
+                                    "jianu-eugen-4.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "luca-lucian",
+                       "nume":  "Luca Lucian",
+                       "oras":  "Mangalia",
+                       "poze":  [
+                                    "luca-lucian-1.jpg",
+                                    "luca-lucian-2.jpg",
+                                    "luca-lucian-3.jpg",
+                                    "luca-lucian-4.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "mortu-simona",
+                       "nume":  "Mortu Simona",
+                       "oras":  "Italia",
+                       "poze":  [
+                                    "mortu-simona-1.jpg",
+                                    "mortu-simona-2.jpg",
+                                    "mortu-simona-3.jpg",
+                                    "mortu-simona-4.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "nastasa-brandusa",
+                       "nume":  "Nastasa Brandusa",
+                       "oras":  "Stockholm, Suedia",
+                       "poze":  [
+                                    "nastasa-brandusa-1.jpg",
+                                    "nastasa-brandusa-2.jpg",
+                                    "nastasa-brandusa-3.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "nastase-sorina",
+                       "nume":  "Nastase Sorina-Diana",
+                       "oras":  "Dubai / Olanda",
+                       "poze":  [
+                                    "nastase-sorina-1.jpg",
+                                    "nastase-sorina-2.jpg",
+                                    "nastase-sorina-3.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "omer-emin",
+                       "nume":  "Omer Emin",
+                       "oras":  "Mangalia",
+                       "poze":  [
+                                    "omer-emin-1.jpg",
+                                    "omer-emin-2.jpg",
+                                    "omer-emin-3.jpg",
+                                    "omer-emin-4.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "oncescu-cristina",
+                       "nume":  "Oncescu Cristina",
+                       "oras":  "Mangalia",
+                       "poze":  [
+                                    "oncescu-cristina-1.jpg",
+                                    "oncescu-cristina-2.jpg",
+                                    "oncescu-cristina-3.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "oprea-marius",
+                       "nume":  "Oprea Marius-Iulian",
+                       "oras":  "Bucuresti",
+                       "poze":  [
+                                    "oprea-marius-1.jpg",
+                                    "oprea-marius-2.jpg",
+                                    "oprea-marius-3.jpg",
+                                    "oprea-marius-4.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "paun-claudia",
+                       "nume":  "Paun Claudia-Mihaela",
+                       "oras":  "Constanta",
+                       "poze":  [
+                                    "paun-claudia-1.jpg",
+                                    "paun-claudia-2.jpg",
+                                    "paun-claudia-3.jpg",
+                                    "paun-claudia-4.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "piros-alina",
+                       "nume":  "Piros Alina-Simona",
+                       "oras":  "Pecs, Ungaria",
+                       "poze":  [
+                                    "piros-alina-1.jpg",
+                                    "piros-alina-2.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "radulescu-irina",
+                       "nume":  "Radulescu Irina-Elena",
+                       "oras":  "Bergen, Norvegia",
+                       "poze":  [
+                                    "radulescu-irina-1.jpg",
+                                    "radulescu-irina-2.jpg",
+                                    "radulescu-irina-3.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "sorica-cristinel",
+                       "nume":  "Sorica Cristinel",
+                       "oras":  "Miami, Florida",
+                       "poze":  [
+                                    "sorica-cristinel-1.jpg",
+                                    "sorica-cristinel-2.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "spin-simona",
+                       "nume":  "Spin Simona",
+                       "oras":  "Bucuresti",
+                       "poze":  [
+                                    "spin-simona-1.jpg",
+                                    "spin-simona-2.jpg",
+                                    "spin-simona-3.jpg",
+                                    "spin-simona-4.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "stanculete-lidia",
+                       "nume":  "Stanculete Lidia-Mihaela",
+                       "oras":  "Franta",
+                       "poze":  [
+                                    "stanculete-lidia-1.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "stoian-madalina",
+                       "nume":  "Stoian Madalina-Emilia",
+                       "oras":  "Mangalia",
+                       "poze":  [
+                                    "stoian-madalina-1.jpg",
+                                    "stoian-madalina-2.jpg",
+                                    "stoian-madalina-3.jpg",
+                                    "stoian-madalina-4.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "suciu-carmen",
+                       "nume":  "Suciu Carmen",
+                       "oras":  "Bucuresti",
+                       "poze":  [
+                                    "suciu-carmen-1.jpg",
+                                    "suciu-carmen-2.jpg",
+                                    "suciu-carmen-3.jpg",
+                                    "suciu-carmen-4.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "tamas-diana",
+                       "nume":  "Tamas Diana-Maria",
+                       "oras":  "Constanta",
+                       "poze":  [
+                                    "tamas-diana-1.jpg",
+                                    "tamas-diana-2.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "tanasecu-consuella",
+                       "nume":  "Tanasecu Consuella-Carmen",
+                       "oras":  "Mangalia",
+                       "poze":  [
+                                    "tanasecu-consuella-1.jpg",
+                                    "tanasecu-consuella-2.jpg",
+                                    "tanasecu-consuella-3.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "teodorescu-nicoleta",
+                       "nume":  "Teodorescu Nicoleta",
+                       "oras":  "Mangalia",
+                       "poze":  [
+                                    "teodorescu-nicoleta-1.jpg",
+                                    "teodorescu-nicoleta-2.jpg",
+                                    "teodorescu-nicoleta-3.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "turtoi-cornelia",
+                       "nume":  "Turtoi Cornelia",
+                       "oras":  "Canada",
+                       "poze":  [
+                                    "turtoi-cornelia-1.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "voinicaru-cristian",
+                       "nume":  "Voinicaru Cristian",
+                       "oras":  "Mangalia",
+                       "poze":  [
+                                    "voinicaru-cristian-1.jpg",
+                                    "voinicaru-cristian-2.jpg",
+                                    "voinicaru-cristian-3.jpg",
+                                    "voinicaru-cristian-4.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "zaluschi-luminita",
+                       "nume":  "Zaluschi Luminita",
+                       "oras":  "",
+                       "poze":  [
+                                    "zaluschi-luminita-1.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "zomborean-vlad",
+                       "nume":  "Zomborean Vlad-Ioan",
+                       "oras":  "Bucuresti",
+                       "poze":  [
+                                    "zomborean-vlad-1.jpg",
+                                    "zomborean-vlad-2.jpg"
+                                ]
+                   },
+                   {
+                       "id":  "totoi-vasile",
+                       "nume":  "Vasile Totoi (Sile)",
+                       "oras":  "Sibiu",
+                       "poze":  [
+                                    "totoi-vasile-1.jpg",
+                                    "totoi-vasile-2.jpg",
+                                    "totoi-vasile-3.jpg"
+                                ]
+                   }
+               ],
+    "profesori":  [
+                      {
+                          "id":  "popescu-georgeta",
+                          "nume":  "Popescu Georgeta",
+                          "rol":  "Diriginte",
+                          "decedat":  true,
+                          "poze":  [
+                                       "popescu-georgeta-1.jpg"
+                                   ]
+                      },
+                      {
+                          "id":  "sangeorzan-stefan",
+                          "nume":  "Sangeorzan Stefan",
+                          "rol":  "Profesor",
+                          "poze":  [
+                                       "sangeorzan-stefan-1.jpg"
+                                   ]
+                      },
+                      {
+                          "id":  "negoias-constantin",
+                          "nume":  "Negoias Constantin",
+                          "rol":  "Profesor",
+                          "decedat":  true,
+                          "poze":  [
+                                       "negoias-constantin-1.jpg"
+                                   ]
+                      },
+                      {
+                          "id":  "matenciuc-mircea",
+                          "nume":  "Matenciuc Mircea",
+                          "rol":  "Profesor",
+                          "decedat":  true,
+                          "poze":  [
+                                       "matenciuc-mircea-1.jpg"
+                                   ]
+                      },
+                      {
+                          "id":  "vladut-nicolae",
+                          "nume":  "Vladut Nicolae",
+                          "rol":  "Profesor",
+                          "poze":  [
+                                       "vladut-nicolae-1.jpg"
+                                   ]
+                      },
+                      {
+                          "id":  "epure-eugenia",
+                          "nume":  "Epure Eugenia",
+                          "rol":  "Profesor",
+                          "poze":  [
+                                       "epure-eugenia-1.jpg"
+                                   ]
+                      },
+                      {
+                          "id":  "coman-angela",
+                          "nume":  "Coman Angela",
+                          "rol":  "Profesor",
+                          "poze":  [
+                                       "coman-angela-1.jpg"
+                                   ]
+                      },
+                      {
+                          "id":  "pufulescu-constantina",
+                          "nume":  "Pufulescu Constantina",
+                          "rol":  "Profesor",
+                          "poze":  [
+                                       "pufulescu-constantina-1.jpg"
+                                   ]
+                      },
+                      {
+                          "id":  "negoias-cornelia",
+                          "nume":  "Negoias Cornelia",
+                          "rol":  "Profesor",
+                          "poze":  [
+                                       "negoias-cornelia-1.jpg"
+                                   ]
+                      },
+                      {
+                          "id":  "hagiu-lucia",
+                          "nume":  "Hagiu Lucia",
+                          "rol":  "Profesor",
+                          "poze":  [
+                                       "hagiu-lucia-1.jpg"
+                                   ]
+                      },
+                      {
+                          "id":  "paduraru-adriana",
+                          "nume":  "Paduraru Adriana",
+                          "rol":  "Profesor",
+                          "poze":  [
+                                       "paduraru-adriana-1.jpg"
+                                   ]
+                      },
+                      {
+                          "id":  "sandu-gheorghe",
+                          "nume":  "Sandu Gheorghe",
+                          "rol":  "Profesor",
+                          "poze":  [
+                                       "sandu-gheorghe-1.jpg"
+                                   ]
+                      },
+                      {
+                          "id":  "spataru-petre",
+                          "nume":  "Spataru Petre",
+                          "rol":  "Profesor",
+                          "poze":  [
+                                       "spataru-petre-1.jpg"
+                                   ]
+                      }
+                  ],
+    "album_foto":  [
+                       {
+                           "titlu":  "Clasa a IX a",
+                           "url":  "https://photos.app.goo.gl/X3dv6Ju7DpbZeTR76"
+                       },
+                       {
+                           "titlu":  "Clasa a X a",
+                           "url":  "https://photos.app.goo.gl/jfoJTE1V8nPB7Y1h8"
+                       },
+                       {
+                           "titlu":  "Clasa a XI a",
+                           "url":  "https://photos.app.goo.gl/EcZnYFokyRoiwG7LA"
+                       },
+                       {
+                           "titlu":  "Clasa a XII a",
+                           "url":  "https://photos.app.goo.gl/PvtBj6P4k1JURkTV7"
+                       },
+                       {
+                           "titlu":  "Banchet 1988",
+                           "url":  "https://photos.app.goo.gl/Ni8V5KTrMropBPDU8"
+                       },
+                       {
+                           "titlu":  "Banchet 1998",
+                           "url":  "https://photos.app.goo.gl/qDoUydkia6HSSFiQ9"
+                       },
+                       {
+                           "titlu":  "Banchet 2008 (Vald)",
+                           "url":  "https://photos.app.goo.gl/hkVhrxiyjidmXaFS6"
+                       },
+                       {
+                           "titlu":  "Banchet 2008 (Marius)",
+                           "url":  "https://photos.app.goo.gl/QTu1K9aZ6J3sy6tB6"
+                       },
+                       {
+                           "titlu":  "Banchet 2013 Terasa Mangalia",
+                           "url":  "https://photos.app.goo.gl/XiFKroCgWo9Zsio19"
+                       },
+                       {
+                           "titlu":  "Banchet 2013 Restaurant",
+                           "url":  "https://photos.app.goo.gl/NvzuJ4oA3usNozHt8"
+                       },
+                       {
+                           "titlu":  "Banchet 2013 Poze John",
+                           "url":  "https://photos.app.goo.gl/7CFSUXsmxG8wdkk46"
+                       },
+                       {
+                           "titlu":  "Banchet 2013 Plaja Mangalia",
+                           "url":  "https://photos.app.goo.gl/sjd1TXC4bT5HHXYF8"
+                       },
+                       {
+                           "titlu":  "Banchet 2013 Liceu",
+                           "url":  "https://photos.app.goo.gl/6nnBgZoP2J4iZUJ96"
+                       },
+                       {
+                           "titlu":  "Banchet 2013",
+                           "url":  "https://photos.app.goo.gl/6cyQrcvy4FGmPRB6A"
+                       },
+                       {
+                           "titlu":  "Banchet 2013 Cristi",
+                           "url":  "https://photos.app.goo.gl/NUovt1k5SWuEcRpv6"
+                       },
+                       {
+                           "titlu":  "Banchet 2023 (1)",
+                           "url":  "https://photos.app.goo.gl/DrHigvdATuaLPp9m7"
+                       },
+                       {
+                           "titlu":  "Banchet 2023 (2)",
+                           "url":  "https://photos.app.goo.gl/DDuSbpz66FdkszUv5"
+                       },
+                       {
+                           "titlu":  "Banchet 2023 C",
+                           "url":  "https://photos.app.goo.gl/tQpPApGPHwmrZD8R8"
+                       },
+                       {
+                           "titlu":  "Banchet 2023 Carmen",
+                           "url":  "https://photos.app.goo.gl/QWLC6pd638LcrVgE9"
+                       },
+                       {
+                           "titlu":  "Banchet 2023 Oncescu",
+                           "url":  "https://photos.app.goo.gl/pzrAHmmTjztNwY2u7"
+                       },
+                       {
+                           "titlu":  "Majorat John",
+                           "url":  "https://photos.app.goo.gl/dtx6cUzBSPvyC8Cc6"
+                       },
+                       {
+                           "titlu":  "Majorat Vlad",
+                           "url":  "https://photos.app.goo.gl/kDqwA1fM9tf6fjbp6"
+                       },
+                       {
+                           "titlu":  "Majorat Albu Marius",
+                           "url":  "https://photos.app.goo.gl/kDqwA1fM9tf6fjbp6"
+                       },
+                       {
+                           "titlu":  "Iarna pe ulita",
+                           "url":  "https://photos.app.goo.gl/k8Fzs6typnoEUbb57"
+                       },
+                       {
+                           "titlu":  "Foto Mangalia",
+                           "url":  "https://photos.app.goo.gl/biBWmNVRX7eS1886A"
+                       },
+                       {
+                           "titlu":  "Fotbal",
+                           "url":  "https://photos.app.goo.gl/VJEqzzYrSSm6q9Br5"
+                       },
+                       {
+                           "titlu":  "La terasa",
+                           "url":  "https://photos.app.goo.gl/6X5DwcfjJHvvStzBA"
+                       },
+                       {
+                           "titlu":  "Diverse",
+                           "url":  "https://photos.app.goo.gl/q4JVP2Adrq4jBYtf9"
+                       },
+                       {
+                           "titlu":  "La scoala",
+                           "url":  "https://photos.app.goo.gl/usXd3L51BL6kxq3C7"
+                       },
+                       {
+                           "titlu":  "Majorat Carmen+Madalina",
+                           "url":  "https://photos.app.goo.gl/1tRXcMzfD8C6dLeb6"
+                       },
+                       {
+                           "titlu":  "Poza de final + meciul vietii",
+                           "url":  "https://photos.app.goo.gl/tS7bGRPt68moVgqq5"
+                       },
+                       {
+                           "titlu":  "Practica agricola",
+                           "url":  "https://photos.app.goo.gl/LioYFhD3HsXLW6Hj9"
+                       },
+                       {
+                           "titlu":  "Clasa noastra pe Everest",
+                           "url":  "https://photos.app.goo.gl/Ge6i3uXP21v3gLqp6"
+                       }
+                   ],
+    "video":  [
+                  {
+                      "titlu":  "In liceu, clasa a X a",
+                      "url":  "https://youtu.be/LIuPq7dfvb0"
+                  },
+                  {
+                      "titlu":  "Banchet 1988",
+                      "url":  "https://youtu.be/W_DnhEp_kg0"
+                  },
+                  {
+                      "titlu":  "Intalnirea 2008 (Restaurant)",
+                      "url":  "https://youtu.be/b0RADCC73tg"
+                  },
+                  {
+                      "titlu":  "Intalnirea 2008",
+                      "url":  "https://youtu.be/krqJ2j4KKwg"
+                  },
+                  {
+                      "titlu":  "Intalnirea 2008 (1/3)",
+                      "url":  "https://youtu.be/LeJ-INfXYkI"
+                  },
+                  {
+                      "titlu":  "Intalnirea 2008 (2/3)",
+                      "url":  "https://youtu.be/4wcwJPausx8"
+                  },
+                  {
+                      "titlu":  "Intalnirea 2013 (1/4)",
+                      "url":  "https://youtu.be/w_yZCdGOb2k"
+                  },
+                  {
+                      "titlu":  "Intalnirea 2013 (2/4)",
+                      "url":  "https://youtu.be/GNut50T7Wfs"
+                  },
+                  {
+                      "titlu":  "Intalnirea 2013 (3/4)",
+                      "url":  "https://youtu.be/9kN1d9XvNI8"
+                  },
+                  {
+                      "titlu":  "Intalnirea 2013 (4/4)",
+                      "url":  "https://youtu.be/BsEc9-Uq_VQ"
+                  },
+                  {
+                      "titlu":  "Intalnirea 2018",
+                      "url":  "https://youtu.be/rxKfIoqEzD8"
+                  },
+                  {
+                      "titlu":  "Intalnirea 2018 (GoPro)",
+                      "url":  "https://youtu.be/92wWGDxvzhA"
+                  },
+                  {
+                      "titlu":  "Intalnirea 2011",
+                      "url":  "https://youtu.be/tbaXouTc3lE"
+                  },
+                  {
+                      "titlu":  "Intalnirea 2023",
+                      "url":  "https://youtu.be/Z5ym7E5A-DA"
+                  }
+              ]
+};
