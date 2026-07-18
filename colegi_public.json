@@ -44,8 +44,8 @@
   "profesori": [
     { "id": "popescu-georgeta", "nume": "Popescu Georgeta", "rol": "Diriginte", "decedat": true, "poze": ["popescu_georgeta.jpg"] },
     { "id": "sangeorzan-stefan", "nume": "Sangeorzan Stefan", "rol": "Profesor", "poze": ["sangeorzan_stefan.jpg"] },
-    { "id": "negoias-constantin", "nume": "Negoias Constantin", "rol": "Profesor", "decedat": true, "poze": ["negoias_constantin.jpg"] },
-    { "id": "matenciuc-mircea", "nume": "Matenciuc Mircea", "rol": "Profesor", "decedat": true, "poze": ["matenciuc.jpg"] },
+    { "id": "negoias-constantin", "nume": "Negoias Constantin", "rol": "Profesor", "decedat": true, "poze": ["negoias_constantin_clean.jpg"] },
+    { "id": "matenciuc-mircea", "nume": "Matenciuc Mircea", "rol": "Profesor", "decedat": true, "poze": ["matenciuc_clean.jpg"] },
     { "id": "vladut-nicolae", "nume": "Vladut Nicolae", "rol": "Profesor", "poze": ["vladut.jpg"] },
     { "id": "epure-eugenia", "nume": "Epure Eugenia", "rol": "Profesor", "poze": ["epure_eugenia.jpg"] },
     { "id": "coman-angela", "nume": "Coman Angela", "rol": "Profesor", "poze": ["coman_angela.jpg"] },
