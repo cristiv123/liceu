@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/contact.css">
+<script src="assets/js/nav.js" defer></script>
 </head>
 <body>
 
@@ -20,7 +21,10 @@
       <span class="brand-mark">XII<span class="brand-mark-accent">A</span></span>
       <span class="brand-text">Promoția 1988</span>
     </a>
-    <nav class="main-nav" aria-label="Navigare">
+    <button class="nav-toggle" aria-label="Deschide meniul" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Navigare">
       <a href="index.html#colegi">Colegi</a>
       <a href="index.html#profesori">Profesori</a>
       <a href="index.html#arhiva">Arhivă foto</a>
