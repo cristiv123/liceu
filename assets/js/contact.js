@@ -7,27 +7,43 @@
   const tbody = document.getElementById("contact-table-body");
   const extraBody = document.getElementById("extra-table-body");
 
-  function cell(text, muted) {
+  function cell(text, label, muted) {
     const td = document.createElement("td");
     td.textContent = text || "—";
+    if (label) td.dataset.label = label;
     if (muted && !text) td.classList.add("muted");
     return td;
   }
 
-  function photoCell(poze, index, nume) {
+  function photosCell(poze, nume) {
     const td = document.createElement("td");
-    const poza = poze && poze[index];
-    if (poza) {
-      const img = document.createElement("img");
-      img.src = IMG_BASE + poza;
-      img.alt = `${nume} (${YEARS[index]})`;
-      img.loading = "lazy";
-      img.className = "contact-thumb";
-      td.appendChild(img);
-    } else {
-      td.classList.add("muted");
-      td.textContent = "—";
-    }
+    td.className = "contact-photos-cell";
+    td.dataset.label = "Poze";
+    const wrap = document.createElement("div");
+    wrap.className = "contact-photos";
+    YEARS.forEach((year, index) => {
+      const poza = poze && poze[index];
+      const fig = document.createElement("figure");
+      fig.className = "contact-photo";
+      if (poza) {
+        const img = document.createElement("img");
+        img.src = IMG_BASE + poza;
+        img.alt = `${nume} (${year})`;
+        img.loading = "lazy";
+        img.className = "contact-thumb";
+        fig.appendChild(img);
+      } else {
+        const placeholder = document.createElement("div");
+        placeholder.className = "contact-thumb contact-thumb-empty";
+        placeholder.textContent = "—";
+        fig.appendChild(placeholder);
+      }
+      const caption = document.createElement("figcaption");
+      caption.textContent = year;
+      fig.appendChild(caption);
+      wrap.appendChild(fig);
+    });
+    td.appendChild(wrap);
     return td;
   }
 
@@ -36,14 +52,12 @@
     colegiPrivat.forEach((c) => {
       const poze = (colegiPublicById[c.id] || {}).poze || [];
       const tr = document.createElement("tr");
-      for (let i = 0; i < YEARS.length; i++) {
-        tr.appendChild(photoCell(poze, i, c.nume));
-      }
-      tr.appendChild(cell(c.nume));
-      tr.appendChild(cell((c.telefon || []).join(", "), true));
-      tr.appendChild(cell((c.email || []).join(", "), true));
-      tr.appendChild(cell(c.adresa, true));
-      tr.appendChild(cell(c.data_nasterii, true));
+      tr.appendChild(photosCell(poze, c.nume));
+      tr.appendChild(cell(c.nume, "Nume"));
+      tr.appendChild(cell((c.telefon || []).join(", "), "Telefon", true));
+      tr.appendChild(cell((c.email || []).join(", "), "Email", true));
+      tr.appendChild(cell(c.adresa, "Adresă", true));
+      tr.appendChild(cell(c.data_nasterii, "Data nașterii", true));
       tbody.appendChild(tr);
     });
   }
@@ -52,16 +66,16 @@
     extraBody.innerHTML = "";
     if (diriginte) {
       const tr = document.createElement("tr");
-      tr.appendChild(cell(`${diriginte.nume} (diriginte)`));
-      tr.appendChild(cell((diriginte.telefon || []).join(", "), true));
-      tr.appendChild(cell("", true));
+      tr.appendChild(cell(`${diriginte.nume} (diriginte)`, "Nume"));
+      tr.appendChild(cell((diriginte.telefon || []).join(", "), "Telefon", true));
+      tr.appendChild(cell("", "Email", true));
       extraBody.appendChild(tr);
     }
     (contacteSuplimentare || []).forEach((c) => {
       const tr = document.createElement("tr");
-      tr.appendChild(cell(c.nume));
-      tr.appendChild(cell(c.telefon, true));
-      tr.appendChild(cell(c.email, true));
+      tr.appendChild(cell(c.nume, "Nume"));
+      tr.appendChild(cell(c.telefon, "Telefon", true));
+      tr.appendChild(cell(c.email, "Email", true));
       extraBody.appendChild(tr);
     });
   }
@@ -82,7 +96,7 @@
       renderExtra(privat.diriginte, privat.contacte_suplimentare);
     })
     .catch((err) => {
-      tbody.innerHTML = '<tr><td colspan="9" style="color:#a94f21">Nu am putut încărca datele.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="6" style="color:#a94f21">Nu am putut încărca datele.</td></tr>';
       console.error("Eroare la încărcarea datelor de contact:", err);
     });
 })();

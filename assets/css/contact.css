@@ -30,27 +30,27 @@
   white-space: nowrap;
 }
 
-.contact-table th:nth-child(6),
-.contact-table td:nth-child(6) {
+.contact-table th:nth-child(3),
+.contact-table td:nth-child(3) {
   white-space: normal;
   max-width: 130px;
 }
 
-.contact-table th:nth-child(7),
-.contact-table td:nth-child(7) {
+.contact-table th:nth-child(4),
+.contact-table td:nth-child(4) {
   white-space: normal;
   max-width: 170px;
   word-break: break-word;
 }
 
-.contact-table th:nth-child(8),
-.contact-table td:nth-child(8) {
+.contact-table th:nth-child(5),
+.contact-table td:nth-child(5) {
   white-space: normal;
   max-width: 190px;
 }
 
-.contact-table th:nth-child(9),
-.contact-table td:nth-child(9) {
+.contact-table th:nth-child(6),
+.contact-table td:nth-child(6) {
   white-space: normal;
   max-width: 110px;
 }
@@ -67,16 +67,90 @@
 .contact-table tbody tr:last-child td { border-bottom: none; }
 .contact-table tbody tr:hover { background: var(--color-bg-alt); }
 
-.contact-table td.muted { color: var(--color-text-muted); text-align: center; }
+.contact-table td.muted { color: var(--color-text-muted); }
 
-.contact-table th:nth-child(-n+4) { text-align: center; }
-.contact-table td:nth-child(-n+4) { padding: 8px; text-align: center; }
+.contact-photos {
+  display: flex;
+  gap: 6px;
+}
+
+.contact-photo {
+  margin: 0;
+  text-align: center;
+}
+
+.contact-photo figcaption {
+  font-size: 0.68rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
 
 .contact-thumb {
-  width: 48px;
-  height: 58px;
+  width: 44px;
+  height: 54px;
   object-fit: cover;
   border-radius: 4px;
   display: inline-block;
   border: 1px solid var(--color-border);
+}
+
+.contact-thumb-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  background: var(--color-bg-alt);
+  font-size: 0.75rem;
+}
+
+/* ---------- Mobile card layout ---------- */
+
+@media (max-width: 720px) {
+  .table-scroll {
+    overflow-x: visible;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .contact-table, .contact-table tbody {
+    display: block;
+    width: 100%;
+  }
+
+  .contact-table thead { display: none; }
+
+  .contact-table tr {
+    display: block;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    padding: 14px 16px;
+    margin-bottom: 16px;
+  }
+
+  .contact-table td {
+    display: block;
+    width: 100%;
+    max-width: none !important;
+    white-space: normal !important;
+    padding: 6px 0;
+    border-bottom: none;
+  }
+
+  .contact-table td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-primary-dark);
+    margin-bottom: 2px;
+  }
+
+  .contact-photos-cell { padding-bottom: 10px; border-bottom: 1px solid var(--color-border); margin-bottom: 8px; }
+
+  .contact-photos { justify-content: flex-start; }
 }
