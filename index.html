@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clasa a XII-a A · Liceul Industrial Nr. 2 Mangalia · Promoția 1988</title>
+<meta name="description" content="Site de reîntâlnire pentru colegii de liceu — Clasa a XII-a A, Liceul Industrial Nr. 2 Mangalia, Promoția 1988.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">XII<span class="brand-mark-accent">A</span></span>
+      <span class="brand-text">Promoția 1988</span>
+    </a>
+    <nav class="main-nav" aria-label="Navigare principală">
+      <a href="#colegi">Colegi</a>
+      <a href="#profesori">Profesori</a>
+      <a href="#arhiva">Arhivă foto</a>
+      <a href="#video">Video</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="hero-eyebrow">Liceul Industrial Nr. 2 Mangalia</p>
+      <h1 class="hero-title">Clasa a XII-a A<br><span>Promoția 1988</span></h1>
+      <p class="hero-subtitle">Locul unde ne regăsim — poze, amintiri și legăturile care au rămas după atâția ani.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#colegi">Vezi colegii</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="colegi">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-eyebrow">Clasa noastră</p>
+        <h2>Colegii</h2>
+        <p class="section-lead">37 de colegi, răspândiți pe trei continente — dar tot o clasă.</p>
+      </div>
+      <div class="colegi-grid" id="colegi-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section" id="profesori">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-eyebrow">Corpul didactic</p>
+        <h2>Profesorii noștri</h2>
+        <p class="section-lead">Dirigintă și profesorii care ne-au îndrumat în anii de liceu.</p>
+      </div>
+      <div class="colegi-grid profesori-grid" id="profesori-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section" id="arhiva">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-eyebrow">Amintiri</p>
+        <h2>Arhivă foto</h2>
+        <p class="section-lead">Albume Google Photos din liceu și de la reîntâlniri, de-a lungul anilor.</p>
+      </div>
+      <div class="albume-grid" id="albume-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section" id="video">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-eyebrow">Momente filmate</p>
+        <h2>Video</h2>
+        <p class="section-lead">Filmări din liceu și de la reîntâlniri, an de an.</p>
+      </div>
+      <div class="video-grid" id="video-grid" aria-live="polite"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="footer-year"></span> Clasa a XII-a A &middot; Liceul Industrial Nr. 2 Mangalia &middot; Promoția 1988</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightbox-close" aria-label="Închide">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Poza anterioară">&#10094;</button>
+  <img class="lightbox-img" id="lightbox-img" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Poza următoare">&#10095;</button>
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

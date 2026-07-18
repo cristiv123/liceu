@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /contact.html
+Disallow: /colegi_complet_privat.json
